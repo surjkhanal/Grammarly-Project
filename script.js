@@ -123,11 +123,7 @@ function createErrorElement(word,error){
 }
 
 async function checkWordError(word){
-<<<<<<< HEAD
     let result = await fetch("https://api.textgears.com/grammar?key=P65r2OccQmrGNpvB&language=en-GB&text="+word).catch(err => {
-=======
-    let result = await fetch("https://api.textgears.com/grammar?key=xidd6jmGDUhDAz64&language=en-GB&text="+word).catch(err => {
->>>>>>> 9e697ce99d08f3df719e26624d49a4fcd02b9879
         console.error(err);
     });
     result = await result.json();
