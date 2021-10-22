@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Grammly</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://img.icons8.com/color/48/000000/brick.png">
+</head>
+
+<body>
+  <header>
+    <a href="/" id="logo" download="/randomData.txt">Grammly</a>
+  </header>
+  <main>
+    <div id="feature">
+      <div class="feature-img">
+        <img src="./Writing a letter-amico.svg" alt="" srcset="">
+      </div>
+      <div class="feature-txt">
+        <h1>Get Rid of Typo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quod non at voluptatum autem temporibus
+          aliquid error nemo distinctio quia asperiores fuga perspiciatis maiores corporis magnam quos, reprehenderit
+          qui! Molestiae.</p>
+      </div>
+    </div>
+    <div id="input-forms">
+      <form id="text-form">
+        <h2>Enter a text</h2>
+        <textarea name="text" spellcheck="false" required></textarea>
+        <input type="submit" value="Check">
+
+      </form>
+      <div id="divider"></div>
+
+      <form id="file-form">
+        <h2>Upload a text file</h2>
+        <input name="file" type="file">
+        <input type="submit" value="Check">
+      </form>
+
+    </div>
+
+
+    <div id="result">
+      <h1>Result</h1>
+      <pre id="result-txt"></pre>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
