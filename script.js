@@ -116,9 +116,10 @@ function createErrorElement(word,error){
     span.title=errorDescription['en'];
 
     function callabck(event){
+        event.preventDefault();
         event.target.appendChild(createPopUp(suggestion,callabck));
     }
-    span.addEventListener('click',callabck);
+    span.addEventListener('contextmenu',callabck);
     pushResult(span);
 }
 
@@ -150,7 +151,7 @@ function createPopUp(array,callabck) {
             let parrentTarget = event.target.parentNode.parentNode;
             parrentTarget.className="";
             parrentTarget.textContent=correctText;
-            parrentTarget.removeEventListener('click',callabck)
+            parrentTarget.removeEventListener('contextmenu',callabck)
             // checkGrammer(resultTxtBlock.textContent);
         })
     })
