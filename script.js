@@ -124,7 +124,7 @@ function createErrorElement(word,error){
 }
 
 async function checkWordError(word){
-    let result = await fetch("https://api.textgears.com/grammar?key=P65r2OccQmrGNpvB&language=en-GB&text="+word).catch(err => {
+    let result = await fetch("https://api.textgears.com/grammar?key=vbnaSxHc5W12hK2Q&language=en-GB&text="+word).catch(err => {
         console.error(err);
     });
     result = await result.json();
