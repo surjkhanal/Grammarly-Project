@@ -1,2 +1,2 @@
 # Grammarly-Project
-https://surjkhanal.github.io/Grammarly-Project/
+https://tosudh.github.io/Grammarly-Project/
